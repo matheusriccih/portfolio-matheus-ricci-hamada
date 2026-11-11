@@ -9,13 +9,14 @@ export const profileData = {
     initials: 'MR',
     role: 'Analista de Suporte / TI',
     location: 'Londrina, Paraná, Brasil',
+    logo: './assets/mr-logo.png',
     photo: './assets/matheus-ricci-hamada.png',
     resumeUrl: '', // Ex.: './assets/curriculo-matheus-ricci-hamada.pdf'
   },
   hero: {
     eyebrow: 'Tecnologia · Suporte · Evolução contínua',
     statement: 'Conectando tecnologia, pessoas e soluções.',
-    description: 'Profissional de Tecnologia da Informação, com experiência na área de suporte técnico e atuação em ambiente corporativo. Estudante de Análise e Desenvolvimento de Sistemas, interessado em desenvolvimento de software, infraestrutura e soluções tecnológicas. Busco evoluir constantemente, aplicar conhecimentos na prática e contribuir para resultados por meio da tecnologia.',
+    description: 'Profissional de Tecnologia da Informação, com experiência em suporte técnico e interesse em desenvolvimento de software, infraestrutura e soluções digitais. Busco aplicar meus conhecimentos, resolver problemas e continuar evoluindo profissionalmente.',
   },
   about: {
     title: 'Tecnologia com escuta, prática e evolução.',
@@ -56,10 +57,10 @@ export const profileData = {
     {
       name: 'Finanças Matheus',
       type: 'Projeto pessoal',
-      description: 'Dashboard de controle financeiro pessoal para acompanhar receitas, despesas, movimentações e metas.',
-      stack: ['Next.js', 'React', 'Tailwind CSS', 'Supabase', 'SQL'],
-      url: '',
-      repository: '',
+      description: 'Sistema de gestão financeira pessoal desenvolvido com Next.js, React, TypeScript e Supabase.',
+      stack: ['Next.js', 'React', 'TypeScript', 'Supabase'],
+      url: 'https://financas-matheus-six.vercel.app',
+      repository: 'https://github.com/matheusriccih/financas-matheus',
     },
     {
       name: 'MGZ Creator',
@@ -68,6 +69,16 @@ export const profileData = {
       stack: ['Infraestrutura', 'Redes', 'Desenvolvimento web'],
       url: 'https://mgzcreator.com.br',
       repository: '',
+      image: 'https://mgzcreator.com.br/assets/og.png',
+      imageAlt: 'Prévia do site da MGZ Creator',
+    },
+    {
+      name: 'Desenvolvimento Web',
+      type: 'Projeto prático',
+      description: 'Projeto prático de desenvolvimento web com foco em estruturação de páginas e estilização.',
+      stack: ['HTML', 'CSS'],
+      url: 'https://matheusriccih.github.io/projeto-html-css/',
+      repository: 'https://github.com/matheusriccih',
     },
     {
       name: 'Brasil Conectado',

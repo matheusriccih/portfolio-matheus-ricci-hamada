@@ -11,6 +11,7 @@
     <meta name="theme-color" content="#080b12" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./audit.css" />
     <title>Matheus Ricci Hamada | Analista de Suporte / TI</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
     <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
     <header class="nav-shell">
       <nav class="nav container" aria-label="Navegação principal">
-        <a href="#inicio" class="brand" aria-label="Início"><span>MR</span><i></i></a>
+        <a href="#inicio" class="brand brand-logo-link" aria-label="Matheus Ricci Hamada — Início"><img class="brand-logo" data-brand-logo src="./assets/mr-logo.png" alt="Monograma MR de Matheus Ricci Hamada" /></a>
         <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><b class="sr-only">Abrir menu</b></button>
         <div id="nav-links" class="nav-links">
           <a href="#sobre">Sobre</a><a href="#trajetoria">Trajetória</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
@@ -28,13 +29,13 @@
     <main id="main">
       <section id="inicio" class="hero container section-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow" id="hero-eyebrow"></p>
-          <p class="intro">Olá, sou <span id="person-short-name"></span>.</p>
-          <h1 id="hero-statement"></h1>
-          <p class="hero-description" id="hero-description"></p>
-          <div class="meta"><span class="status-dot"></span><span id="person-location"></span><span class="meta-divider"></span><span>Disponível para oportunidades</span></div>
-          <div class="hero-actions"><a class="button primary" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a><a class="button ghost" href="#projetos">Conheça meu trabalho</a><a class="resume-link is-hidden" id="resume-link" target="_blank" rel="noopener">Currículo <span aria-hidden="true">↓</span></a></div>
-          <p class="pending-note is-hidden" id="resume-note">Currículo em atualização.</p>
+          <p class="eyebrow" id="hero-eyebrow">Tecnologia · Suporte · Evolução contínua</p>
+          <p class="intro">Olá, sou <span id="person-short-name">Matheus Ricci Hamada</span>.</p>
+          <p class="hero-role" id="person-role">Analista de Suporte / TI</p>
+          <h1 id="hero-statement">Conectando tecnologia, pessoas e soluções.</h1>
+          <p class="hero-description" id="hero-description">Profissional de Tecnologia da Informação, com experiência em suporte técnico e interesse em desenvolvimento de software, infraestrutura e soluções digitais. Busco aplicar meus conhecimentos, resolver problemas e continuar evoluindo profissionalmente.</p>
+          <div class="meta"><span class="status-dot"></span><span id="person-location">Londrina, Paraná, Brasil</span><span class="meta-divider"></span><span>Disponível para oportunidades</span></div>
+          <div class="hero-actions"><a class="button primary" href="#trajetoria">Conheça minha trajetória <span aria-hidden="true">↓</span></a><a class="button ghost" href="#projetos">Veja meus projetos</a><a class="button ghost" href="#contato">Entrar em contato</a><a class="resume-link is-hidden" id="resume-link" target="_blank" rel="noopener">Currículo <span aria-hidden="true">↓</span></a></div>
         </div>
         <div class="hero-visual reveal" aria-label="Espaço reservado para fotografia profissional">
           <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
@@ -45,17 +46,17 @@
 
       <section id="sobre" class="container section about-section">
         <div class="section-label reveal"><span>01</span><p>Sobre mim</p></div>
-        <div class="about-layout"><div class="about-photo reveal"><div class="photo-card photo-small" data-photo-slot></div></div><div class="about-copy reveal"><h2 id="about-title"></h2><div id="about-paragraphs"></div><div class="trait-list" id="trait-list"></div></div></div>
+        <div class="about-layout"><div class="about-photo reveal"><div class="photo-card photo-small" data-photo-slot></div></div><div class="about-copy reveal"><h2 id="about-title">Tecnologia com escuta, prática e evolução.</h2><div id="about-paragraphs"><p>Minha trajetória em TI começou como estagiário e seguiu com a efetivação para atuação em tempo integral — uma experiência que reforçou a importância de aprender na prática e colaborar com pessoas.</p><p>Hoje, concilio a vivência em suporte com a graduação em Análise e Desenvolvimento de Sistemas. Tenho interesse em desenvolvimento de software, infraestrutura e soluções tecnológicas que tornem o trabalho mais simples e eficiente.</p></div><div class="trait-list" id="trait-list"><span>Aprendizado contínuo</span><span>Resolução de problemas</span><span>Organização</span><span>Raciocínio lógico</span></div></div></div>
       </section>
 
       <section id="trajetoria" class="container section">
-        <div class="section-heading reveal"><div><div class="section-label"><span>02</span><p>Experiência</p></div><h2 id="experience-title"></h2></div><p>Uma evolução que une atuação prática, curiosidade e compromisso com soluções que funcionam.</p></div>
-        <div class="timeline" id="timeline"></div>
+        <div class="section-heading reveal"><div><div class="section-label"><span>02</span><p>Experiência</p></div><h2 id="experience-title">Uma trajetória construída na prática.</h2></div><p>Uma evolução que une atuação prática, curiosidade e compromisso com soluções que funcionam.</p></div>
+        <div class="timeline" id="timeline"><article class="timeline-item"><div class="timeline-index">01</div><div class="timeline-text"><h3>Analista de Suporte / TI</h3><p>Experiência profissional na área de TI, com trajetória iniciada como estagiário e posterior efetivação.</p><p class="pending-note">Empresa, período, responsabilidades e resultados serão adicionados após confirmação.</p></div><div class="timeline-meta">Informações em atualização</div></article><article class="timeline-item"><div class="timeline-index">02</div><div class="timeline-text"><h3>Estagiário de TI</h3><p>Início da trajetória profissional em tecnologia, construindo experiência prática no ambiente corporativo.</p></div><div class="timeline-meta">Informações em atualização</div></article></div>
       </section>
 
       <section id="formacao" class="container section knowledge-section">
         <div class="section-heading reveal"><div><div class="section-label"><span>03</span><p>Formação & conhecimentos</p></div><h2>Conhecimento em constante construção.</h2></div></div>
-        <div class="knowledge-grid"><article class="degree-card reveal"><p class="card-kicker">Formação</p><h3 id="degree-name"></h3><p id="degree-institution"></p><span class="outlined-tag">Em formação</span></article><article class="learning-card reveal"><p class="card-kicker">Estudos e prática</p><div id="learning-list" class="chip-grid"></div><p class="card-note">Espaço preparado para incluir cursos e certificados confirmados.</p></article></div>
+        <div class="knowledge-grid"><article class="degree-card reveal"><p class="card-kicker">Formação</p><h3 id="degree-name">Análise e Desenvolvimento de Sistemas</h3><p id="degree-institution">Universidade Positivo</p><span class="outlined-tag">Em formação</span></article><article class="learning-card reveal"><p class="card-kicker">Estudos e prática</p><div id="learning-list" class="chip-grid"><span>Desenvolvimento web</span><span>Lógica de programação</span><span>Banco de dados</span><span>Cursos complementares</span></div><p class="card-note">Espaço preparado para incluir cursos e certificados confirmados.</p></article></div>
       </section>
 
       <section id="habilidades" class="container section">
@@ -65,16 +66,16 @@
 
       <section id="projetos" class="container section projects-section">
         <div class="section-heading reveal"><div><div class="section-label"><span>05</span><p>Projetos</p></div><h2>Conhecimento que ganha forma na prática.</h2></div><p>Projetos próprios e iniciativas que conectam tecnologia, autonomia e construção contínua.</p></div>
-        <div class="projects-grid" id="projects-grid"></div>
+        <div class="projects-grid" id="projects-grid"><article class="project-card"><span class="project-number">01 · Projeto pessoal</span><h3>Finanças Matheus</h3><p>Sistema de gestão financeira pessoal desenvolvido com Next.js, React, TypeScript e Supabase.</p><div class="stack"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Supabase</span></div><div class="project-links"><a href="https://financas-matheus-six.vercel.app" target="_blank" rel="noopener">Ver projeto ↗</a><a href="https://github.com/matheusriccih/financas-matheus" target="_blank" rel="noopener">GitHub ↗</a></div></article><article class="project-card"><span class="project-number">02 · Iniciativa empreendedora</span><h3>MGZ Creator</h3><p>Projeto voltado a soluções digitais, infraestrutura, redes, segurança e desenvolvimento para empresas.</p><div class="stack"><span>Infraestrutura</span><span>Redes</span><span>Desenvolvimento web</span></div><div class="project-links"><a href="https://mgzcreator.com.br" target="_blank" rel="noopener">Ver projeto ↗</a></div></article><article class="project-card"><span class="project-number">03 · Projeto prático</span><h3>Desenvolvimento Web</h3><p>Projeto prático de desenvolvimento web com foco em estruturação de páginas e estilização.</p><div class="stack"><span>HTML</span><span>CSS</span></div><div class="project-links"><a href="https://matheusriccih.github.io/projeto-html-css/" target="_blank" rel="noopener">Ver projeto ↗</a><a href="https://github.com/matheusriccih" target="_blank" rel="noopener">GitHub ↗</a></div></article><article class="project-card"><span class="project-number">04 · Projeto desenvolvido pela MGZ Creator</span><h3>Brasil Conectado</h3><p>Projeto desenvolvido pela MGZ Creator.</p><div class="stack"><span>MGZ Creator</span></div><div class="project-links"><a href="https://brasilconectado.com.br" target="_blank" rel="noopener">Ver projeto ↗</a></div></article></div>
       </section>
 
       <section class="container venture reveal"><div class="venture-content"><p class="eyebrow">Iniciativa empreendedora</p><h2 id="venture-title"></h2><p id="venture-text"></p><a id="venture-link" class="button primary" target="_blank" rel="noopener">Conhecer MGZ Creator <span aria-hidden="true">↗</span></a></div><div class="venture-mark" aria-hidden="true"><span>MGZ</span><i>CREATOR</i></div></section>
 
       <section id="objetivos" class="container section goals-section"><div class="section-label reveal"><span>06</span><p>Objetivos</p></div><div class="goals-layout"><h2 class="reveal">Novos desafios,<br /><em>novas possibilidades.</em></h2><div class="goals-content reveal"><p>Aberto a oportunidades que permitam contribuir, aprender e evoluir junto a uma equipe. Estes são caminhos de interesse profissional — não uma lista de experiências afirmadas.</p><div class="goal-list" id="goal-list"></div></div></div></section>
 
-      <section id="contato" class="container contact-section reveal"><p class="eyebrow">Contato</p><h2>Vamos construir<br /><em>algo juntos?</em></h2><p>Estou aberto a conversar sobre oportunidades, projetos e novos desafios profissionais.</p><div id="contact-actions" class="contact-actions"></div><p id="contact-note" class="contact-note">Os canais de contato estão em atualização. Volte em breve.</p></section>
+      <section id="contato" class="container contact-section reveal"><p class="eyebrow">Contato</p><h2>Vamos construir<br /><em>algo juntos?</em></h2><p>Estou aberto a conversar sobre oportunidades, projetos e novos desafios profissionais.</p><div id="contact-actions" class="contact-actions"><a href="https://www.linkedin.com/in/matheus-ricci-7483ab23b/" target="_blank" rel="noopener">LinkedIn ↗</a></div><p id="contact-note" class="contact-note is-hidden">Os canais de contato estão em atualização. Volte em breve.</p></section>
     </main>
-    <footer class="container footer"><div><a href="#inicio" class="brand"><span>MR</span><i></i></a><p id="footer-role"></p></div><div><p id="footer-location"></p><p>© <span id="year"></span> Matheus Ricci Hamada.</p></div></footer>
+    <footer class="container footer"><div><a href="#inicio" class="brand brand-logo-link" aria-label="Matheus Ricci Hamada — Início"><img class="brand-logo" data-brand-logo src="./assets/mr-logo.png" alt="Monograma MR de Matheus Ricci Hamada" /></a><p id="footer-role">Analista de Suporte / TI</p></div><div><p id="footer-location">Londrina, Paraná, Brasil</p><p>© <span id="year">2026</span> Matheus Ricci Hamada.</p></div></footer>
     <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
     <script type="application/ld+json" id="person-schema"></script>
     <script type="module" src="./main.js?v=20261111-2"></script>
