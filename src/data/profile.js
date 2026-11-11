@@ -70,12 +70,12 @@ export const profileData = {
       repository: '',
     },
     {
-      name: 'Desenvolvimento Web',
-      type: 'Projeto prático',
-      description: 'Projeto de desenvolvimento web com foco em estruturação de páginas e estilização.',
-      stack: ['HTML', 'CSS'],
-      url: 'https://matheusriccih.github.io/projeto-html-css/',
-      repository: 'https://github.com/matheusriccih',
+      name: 'Brasil Conectado',
+      type: 'Projeto desenvolvido pela MGZ Creator',
+      description: 'Projeto desenvolvido pela MGZ Creator.',
+      stack: ['MGZ Creator'],
+      url: 'https://brasilconectado.com.br',
+      repository: '',
     },
   ],
   venture: {
