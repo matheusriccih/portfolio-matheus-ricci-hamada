@@ -1,4 +1,4 @@
-import { profileData as data } from './data/profile.js';
+import { profileData as data } from './data/profile.js?v=20261111-2';
 
 const $ = (selector) => document.querySelector(selector);
 const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;' })[char]);
