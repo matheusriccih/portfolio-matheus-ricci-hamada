@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio profissional de Matheus Ricci Hamada, Analista de Suporte / TI e estudante de Análise e Desenvolvimento de Sistemas." />
+    <meta name="keywords" content="Matheus Ricci Hamada, Analista de Suporte, TI, Londrina, portfólio, tecnologia" />
+    <meta property="og:title" content="Matheus Ricci Hamada | Analista de Suporte / TI" />
+    <meta property="og:description" content="Conectando tecnologia, pessoas e soluções." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#080b12" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Matheus Ricci Hamada | Analista de Suporte / TI</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+    <header class="nav-shell">
+      <nav class="nav container" aria-label="Navegação principal">
+        <a href="#inicio" class="brand" aria-label="Início"><span>MR</span><i></i></a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><b class="sr-only">Abrir menu</b></button>
+        <div id="nav-links" class="nav-links">
+          <a href="#sobre">Sobre</a><a href="#trajetoria">Trajetória</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="inicio" class="hero container section-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" id="hero-eyebrow"></p>
+          <p class="intro">Olá, sou <span id="person-short-name"></span>.</p>
+          <h1 id="hero-statement"></h1>
+          <p class="hero-description" id="hero-description"></p>
+          <div class="meta"><span class="status-dot"></span><span id="person-location"></span><span class="meta-divider"></span><span>Disponível para oportunidades</span></div>
+          <div class="hero-actions"><a class="button primary" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a><a class="button ghost" href="#projetos">Conheça meu trabalho</a><a class="resume-link is-hidden" id="resume-link" target="_blank" rel="noopener">Currículo <span aria-hidden="true">↓</span></a></div>
+          <p class="pending-note is-hidden" id="resume-note">Currículo em atualização.</p>
+        </div>
+        <div class="hero-visual reveal" aria-label="Espaço reservado para fotografia profissional">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="photo-card hero-photo" data-photo-slot></div>
+          <div class="signal-card"><span class="signal-icon">✦</span><span>Suporte · tecnologia · soluções</span></div>
+        </div>
+      </section>
+
+      <section id="sobre" class="container section about-section">
+        <div class="section-label reveal"><span>01</span><p>Sobre mim</p></div>
+        <div class="about-layout"><div class="about-photo reveal"><div class="photo-card photo-small" data-photo-slot></div></div><div class="about-copy reveal"><h2 id="about-title"></h2><div id="about-paragraphs"></div><div class="trait-list" id="trait-list"></div></div></div>
+      </section>
+
+      <section id="trajetoria" class="container section">
+        <div class="section-heading reveal"><div><div class="section-label"><span>02</span><p>Experiência</p></div><h2 id="experience-title"></h2></div><p>Uma evolução que une atuação prática, curiosidade e compromisso com soluções que funcionam.</p></div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section id="formacao" class="container section knowledge-section">
+        <div class="section-heading reveal"><div><div class="section-label"><span>03</span><p>Formação & conhecimentos</p></div><h2>Conhecimento em constante construção.</h2></div></div>
+        <div class="knowledge-grid"><article class="degree-card reveal"><p class="card-kicker">Formação</p><h3 id="degree-name"></h3><p id="degree-institution"></p><span class="outlined-tag">Em formação</span></article><article class="learning-card reveal"><p class="card-kicker">Estudos e prática</p><div id="learning-list" class="chip-grid"></div><p class="card-note">Espaço preparado para incluir cursos e certificados confirmados.</p></article></div>
+      </section>
+
+      <section id="habilidades" class="container section">
+        <div class="section-heading reveal"><div><div class="section-label"><span>04</span><p>Competências</p></div><h2>Tecnologia para aprender, apoiar e construir.</h2></div><p>Conhecimentos organizados por área de interesse e estudo, sem atribuir níveis ou certificações não informados.</p></div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
+
+      <section id="projetos" class="container section projects-section">
+        <div class="section-heading reveal"><div><div class="section-label"><span>05</span><p>Projetos</p></div><h2>Conhecimento que ganha forma na prática.</h2></div><p>Projetos próprios e iniciativas que conectam tecnologia, autonomia e construção contínua.</p></div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+
+      <section class="container venture reveal"><div class="venture-content"><p class="eyebrow">Iniciativa empreendedora</p><h2 id="venture-title"></h2><p id="venture-text"></p><a id="venture-link" class="button primary" target="_blank" rel="noopener">Conhecer MGZ Creator <span aria-hidden="true">↗</span></a></div><div class="venture-mark" aria-hidden="true"><span>MGZ</span><i>CREATOR</i></div></section>
+
+      <section id="objetivos" class="container section goals-section"><div class="section-label reveal"><span>06</span><p>Objetivos</p></div><div class="goals-layout"><h2 class="reveal">Novos desafios,<br /><em>novas possibilidades.</em></h2><div class="goals-content reveal"><p>Aberto a oportunidades que permitam contribuir, aprender e evoluir junto a uma equipe. Estes são caminhos de interesse profissional — não uma lista de experiências afirmadas.</p><div class="goal-list" id="goal-list"></div></div></div></section>
+
+      <section id="contato" class="container contact-section reveal"><p class="eyebrow">Contato</p><h2>Vamos construir<br /><em>algo juntos?</em></h2><p>Estou aberto a conversar sobre oportunidades, projetos e novos desafios profissionais.</p><div id="contact-actions" class="contact-actions"></div><p id="contact-note" class="contact-note">Os canais de contato estão em atualização. Volte em breve.</p></section>
+    </main>
+    <footer class="container footer"><div><a href="#inicio" class="brand"><span>MR</span><i></i></a><p id="footer-role"></p></div><div><p id="footer-location"></p><p>© <span id="year"></span> Matheus Ricci Hamada.</p></div></footer>
+    <button class="back-to-top" aria-label="Voltar ao topo">↑</button>
+    <script type="application/ld+json" id="person-schema"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "matheus-ricci-hamada-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "node scripts/lint.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}
