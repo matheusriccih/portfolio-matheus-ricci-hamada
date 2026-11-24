@@ -89,6 +89,14 @@ export const profileData = {
       imageAlt: 'Prévia do site da MGZ Creator',
     },
     {
+      name: 'MULT-RACKS',
+      type: 'Projeto próprio',
+      description: 'Projeto voltado a racks de parede, racks de piso, bandejas e acessórios para redes, telecomunicações, provedores e data centers.',
+      stack: ['Redes', 'Telecomunicações', 'Data centers'],
+      url: 'https://multracks.com.br',
+      repository: '',
+    },
+    {
       name: 'Brasil Conectado',
       type: 'Projeto desenvolvido pela MGZ Creator',
       description: 'Projeto desenvolvido pela MGZ Creator.',
