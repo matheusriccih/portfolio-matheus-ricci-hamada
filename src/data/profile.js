@@ -9,7 +9,6 @@ export const profileData = {
     initials: 'MR',
     role: 'Analista de Suporte / TI',
     location: 'Londrina, Paraná, Brasil',
-    logo: './assets/mr-logo-v2.png',
     photo: './assets/matheus-ricci-hamada.png',
     resumeUrl: '', // Ex.: './assets/curriculo-matheus-ricci-hamada.pdf'
   },

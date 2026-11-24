@@ -37,6 +37,21 @@
   transform: none;
 }
 
+.nav {
+  height: 70px;
+  justify-content: flex-end;
+}
+
+.hero-copy {
+  transform: translateY(-48px);
+}
+
+.footer-name {
+  color: #edf5ff;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
 .projects-grid {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -144,4 +159,6 @@
 @media (max-width: 820px) {
   .about-layout--without-photo { grid-template-columns: 1fr; }
   .current-focus { min-height: 0; }
+  .nav { height: 73px; }
+  .hero-copy { transform: none; }
 }
