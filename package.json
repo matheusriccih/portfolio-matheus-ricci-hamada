@@ -1,7 +1,16 @@
 {
   "name": "matheus-ricci-hamada-portfolio",
   "version": "1.0.0",
+  "description": "Portfólio profissional de Matheus Ricci Hamada.",
   "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusriccih/portfolio-matheus-ricci-hamada.git"
+  },
+  "homepage": "https://matheusriccih.github.io/portfolio-matheus-ricci-hamada/",
   "scripts": {
     "lint": "node scripts/lint.mjs",
     "build": "node scripts/build.mjs",
