@@ -9,7 +9,7 @@ export const profileData = {
     initials: 'MR',
     role: 'Analista de Suporte / TI',
     location: 'Londrina, Paraná, Brasil',
-    logo: './assets/mr-logo.png',
+    logo: './assets/mr-logo-v2.png',
     photo: './assets/matheus-ricci-hamada.png',
     resumeUrl: '', // Ex.: './assets/curriculo-matheus-ricci-hamada.pdf'
   },
@@ -113,7 +113,7 @@ export const profileData = {
   goals: ['Suporte técnico', 'Infraestrutura de TI', 'Desenvolvimento Front-end', 'Desenvolvimento Back-end', 'Desenvolvimento Full Stack', 'Operações de TI'],
   contacts: {
     linkedin: 'https://www.linkedin.com/in/matheus-ricci-7483ab23b/',
-    email: '',
+    email: 'matheushamada07@gmail.com',
     whatsapp: '',
   },
 };
