@@ -76,3 +76,68 @@
   .page-glow.glow-one { right: 0 !important; }
   .page-glow.glow-two { left: 0 !important; }
 }
+
+/* O retrato pertence ao destaque principal; a seção de apresentação usa conteúdo profissional complementar. */
+.about-layout--without-photo {
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, .72fr);
+  align-items: stretch;
+}
+
+.current-focus {
+  align-self: stretch;
+  background: linear-gradient(150deg, rgba(20, 42, 78, .88), rgba(10, 17, 30, .94));
+  border: 1px solid rgba(96, 165, 250, .26);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.current-focus h3 {
+  font-size: 1.45rem;
+  margin: 0 0 .75rem;
+}
+
+.current-focus > p:not(.card-kicker) {
+  color: #b8c8dd;
+  font-size: .92rem;
+  margin-bottom: 1.5rem;
+}
+
+.current-focus ul {
+  border-top: 1px solid var(--line);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.current-focus li {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  color: #d8e5f7;
+  display: flex;
+  font-size: .82rem;
+  gap: .7rem;
+  padding: .8rem 0;
+}
+
+.current-focus li span {
+  color: var(--blue-light);
+  font: .68rem var(--mono);
+}
+
+.focus-footer {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: .3rem;
+  margin-top: auto;
+  padding-top: 1.15rem;
+}
+
+.focus-footer span { color: var(--blue-light); font: .65rem var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.focus-footer strong { color: #edf5ff; font-size: .82rem; font-weight: 600; }
+
+@media (max-width: 820px) {
+  .about-layout--without-photo { grid-template-columns: 1fr; }
+  .current-focus { min-height: 0; }
+}

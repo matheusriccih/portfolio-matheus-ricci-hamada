@@ -63,6 +63,22 @@ export const profileData = {
       repository: 'https://github.com/matheusriccih/financas-matheus',
     },
     {
+      name: 'Controle Financeiro Pessoal',
+      type: 'Projeto pessoal',
+      description: 'Aplicação web para registrar receitas e despesas, acompanhar saldo e manter os dados salvos no navegador.',
+      stack: ['JavaScript', 'HTML', 'CSS', 'LocalStorage'],
+      url: 'https://matheusriccih.github.io/controle-financeiro-pessoal/',
+      repository: 'https://github.com/matheusriccih/controle-financeiro-pessoal',
+    },
+    {
+      name: 'Desenvolvimento Web',
+      type: 'Projeto prático',
+      description: 'Página de apresentação responsiva desenvolvida para praticar estrutura semântica, layout e estilização.',
+      stack: ['HTML', 'CSS'],
+      url: 'https://matheusriccih.github.io/projeto-html-css/',
+      repository: 'https://github.com/matheusriccih/projeto-html-css',
+    },
+    {
       name: 'MGZ Creator',
       type: 'Iniciativa empreendedora',
       description: 'Projeto voltado a soluções digitais, infraestrutura, redes, segurança e desenvolvimento para empresas.',
@@ -71,14 +87,6 @@ export const profileData = {
       repository: '',
       image: 'https://mgzcreator.com.br/assets/og.png',
       imageAlt: 'Prévia do site da MGZ Creator',
-    },
-    {
-      name: 'Desenvolvimento Web',
-      type: 'Projeto prático',
-      description: 'Projeto prático de desenvolvimento web com foco em estruturação de páginas e estilização.',
-      stack: ['HTML', 'CSS'],
-      url: 'https://matheusriccih.github.io/projeto-html-css/',
-      repository: 'https://github.com/matheusriccih',
     },
     {
       name: 'Brasil Conectado',
