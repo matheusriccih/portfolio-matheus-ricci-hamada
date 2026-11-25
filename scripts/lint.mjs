@@ -9,7 +9,7 @@ if (missing.length) {
 const html = readFileSync('src/index.html', 'utf8');
 const config = readFileSync('src/data/profile.js', 'utf8');
 const main = readFileSync('src/main.js', 'utf8');
-for (const token of ['<main', 'meta name="description"', 'profileData', 'Matheus Ricci Hamada', 'Analista de Suporte / TI', 'Conectando tecnologia, pessoas e soluções.']) {
+for (const token of ['<main', 'meta name="description"', 'profileData', 'Matheus Ricci Hamada', 'Suporte de TI e Infraestrutura', 'Conectando tecnologia, pessoas e soluções.']) {
   if (!html.includes(token) && !config.includes(token)) throw new Error(`Verificação falhou: ${token}`);
 }
 if (html.includes('Currículo em atualização.')) throw new Error('O currículo indisponível não deve aparecer no site.');
