@@ -30,7 +30,7 @@ export const profileData = {
     current: {
       role: 'Suporte de TI e Infraestrutura',
       company: 'Multcabos',
-      period: 'Atual',
+      period: 'mai. 2026 – atual',
       description: 'Atuação em tempo integral após o estágio, cuidando do suporte e da infraestrutura de TI da empresa.',
       responsibilities: [
         'Suporte técnico aos usuários',
@@ -44,7 +44,7 @@ export const profileData = {
     previous: {
       role: 'Estagiário de TI',
       company: 'Multcabos',
-      period: '',
+      period: 'fev. 2026 – mai. 2026',
       description: 'Início da trajetória profissional em tecnologia, construindo experiência prática no ambiente corporativo.',
     },
   },
