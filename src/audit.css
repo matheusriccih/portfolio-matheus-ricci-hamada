@@ -78,6 +78,15 @@
   width: 100%;
 }
 
+.project-media-title {
+  color: #e2e8f0;
+  font-size: clamp(1.3rem, 2.6vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  padding: 1rem;
+  text-align: center;
+}
+
 .project-media span {
   color: #cbd5e1;
   font: 0.68rem var(--mono);
