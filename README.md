@@ -1,6 +1,6 @@
 # Portfólio — Matheus Ricci Hamada
 
-Portfólio profissional de **Matheus Ricci Hamada**, Analista de Suporte / TI e estudante de Análise e Desenvolvimento de Sistemas.
+Portfólio profissional de **Matheus Ricci Hamada**: Suporte de TI e Infraestrutura, com Desenvolvimento Web em formação. Estudante de Análise e Desenvolvimento de Sistemas.
 
 **Site:** [matheusriccih.github.io/portfolio-matheus-ricci-hamada](https://matheusriccih.github.io/portfolio-matheus-ricci-hamada/)
 
