@@ -28,15 +28,16 @@ export const profileData = {
   experience: {
     title: 'Uma trajetória construída na prática.',
     current: {
-      role: 'Suporte de TI e Infraestrutura',
+      role: 'Profissional de TI',
       company: 'Multcabos',
       period: 'mai. 2026 – atual',
-      description: 'Atuação em tempo integral após o estágio, cuidando do suporte e da infraestrutura de TI da empresa.',
+      description: 'Efetivado após o estágio, em tempo integral. Presto suporte aos usuários e ajudo a resolver problemas de sistemas, equipamentos e infraestrutura.',
       responsibilities: [
-        'Suporte técnico aos usuários',
-        'Configuração de equipamentos e rede',
-        'Apoio às rotinas de servidores',
+        'Suporte e atendimento aos usuários internos',
+        'Configuração e suporte de equipamentos e rede',
+        'Apoio às rotinas de servidores e infraestrutura de TI',
         'Administração de e-mails corporativos',
+        'Operação de plataformas de e-commerce e marketplaces (Mercado Livre, KaBuM! e Amazon)',
         'Desenvolvimento e publicação, com apoio de IA, dos sites Brasil Conectado e Mult Racks (PHP)',
       ],
       results: [],
