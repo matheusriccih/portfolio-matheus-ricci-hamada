@@ -25,12 +25,16 @@ function renderExperience(item, index) {
 }
 function renderProjects() {
   $('#projects-grid').innerHTML = data.projects.map((project, index) => {
-    const links = [isValidUrl(project.url) && `<a href="${escapeHtml(project.url)}" target="_blank" rel="noopener">Ver projeto ↗</a>`, isValidUrl(project.repository) && `<a href="${escapeHtml(project.repository)}" target="_blank" rel="noopener">GitHub ↗</a>`].filter(Boolean).join('');
+    const links = [isValidUrl(project.url) && `<a href="${escapeHtml(project.url)}" target="_blank" rel="noopener">${escapeHtml(project.urlLabel || 'Ver projeto')} ↗</a>`, isValidUrl(project.repository) && `<a href="${escapeHtml(project.repository)}" target="_blank" rel="noopener">${escapeHtml(project.repositoryLabel || 'GitHub')} ↗</a>`].filter(Boolean).join('');
     const media = isValidUrl(project.image)
-      ? `<div class="project-media"><img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.imageAlt || `Prévia de ${project.name}`)}" loading="lazy" /></div>`
-      : `<div class="project-media"><span>Visual do projeto disponível no link</span></div>`;
+      ? `<div class="project-media"><img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.imageAlt || `Prévia de ${project.name}`)}" loading="lazy" data-name="${escapeHtml(project.name)}" /></div>`
+      : `<div class="project-media"><strong class="project-media-title">${escapeHtml(project.name)}</strong></div>`;
     return `<article class="project-card reveal">${media}<span class="project-number">0${index + 1} · ${escapeHtml(project.type)}</span><h3>${escapeHtml(project.name)}</h3><p>${escapeHtml(project.description)}</p><div class="stack">${project.stack.map((item) => `<span>${escapeHtml(item)}</span>`).join('')}</div>${links ? `<div class="project-links">${links}</div>` : ''}</article>`;
   }).join('');
+  // Se a imagem externa sair do ar, mostra o nome do projeto no lugar.
+  $('#projects-grid').querySelectorAll('.project-media img').forEach((img) => img.addEventListener('error', () => {
+    const title = document.createElement('strong'); title.className = 'project-media-title'; title.textContent = img.dataset.name; img.replaceWith(title);
+  }, { once: true }));
 }
 function renderContacts() {
   const list = [
