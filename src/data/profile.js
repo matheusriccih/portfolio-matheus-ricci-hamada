@@ -43,7 +43,7 @@ export const profileData = {
     },
     previous: {
       role: 'Estagiário de TI',
-      company: '',
+      company: 'Multcabos',
       period: '',
       description: 'Início da trajetória profissional em tecnologia, construindo experiência prática no ambiente corporativo.',
     },
@@ -63,9 +63,10 @@ export const profileData = {
     {
       name: 'Finanças Matheus',
       type: 'Projeto pessoal',
-      description: 'Gestão financeira multiusuário com login, movimentações, cartões de crédito, metas e relatórios. Cada usuário só acessa os próprios dados graças ao Row Level Security do PostgreSQL.',
+      description: 'Gestão financeira multiusuário com login, movimentações, cartões de crédito, metas e relatórios. Cada usuário só acessa os próprios dados graças ao Row Level Security do PostgreSQL. Tem demonstração sem cadastro, com dados fictícios e conta somente leitura.',
       stack: ['Next.js', 'React', 'TypeScript', 'Supabase', 'PostgreSQL'],
       url: 'https://financas-matheus-six.vercel.app',
+      urlLabel: 'Ver demonstração',
       repository: 'https://github.com/matheusriccih/financas-matheus',
     },
     {
@@ -74,7 +75,11 @@ export const profileData = {
       description: 'Catálogo de hardware com busca, categorias, lista de cotação e favoritos, desenvolvido e publicado para a empresa onde trabalho.',
       stack: ['PHP', 'HTML', 'CSS', 'JavaScript'],
       url: 'https://brasilconectado.com.br',
+      urlLabel: 'Ver site',
       repository: 'https://github.com/matheusriccih/brasil-conectado',
+      repositoryLabel: 'Sobre o projeto',
+      image: 'https://brasilconectado.com.br/assets/img/banners/personalizados/placas-video-aea64c0f7468.png',
+      imageAlt: 'Banner da página inicial do Brasil Conectado',
     },
     {
       name: 'Mult Racks',
@@ -82,7 +87,11 @@ export const profileData = {
       description: 'Site institucional com catálogo de racks de parede e de piso, acessórios para redes e formulário de contato.',
       stack: ['PHP', 'HTML', 'CSS', 'JavaScript'],
       url: 'https://multracks.com.br',
+      urlLabel: 'Ver site',
       repository: 'https://github.com/matheusriccih/mult-racks',
+      repositoryLabel: 'Sobre o projeto',
+      image: 'https://multracks.com.br/assets/img/produtos/hero/produtos-racks-premium-v2.png',
+      imageAlt: 'Racks de parede e de piso exibidos no site da Mult Racks',
     },
     {
       name: 'Controle Financeiro Pessoal',
@@ -98,6 +107,7 @@ export const profileData = {
       description: 'Empresa da qual sou cofundador, criando sites e landing pages para negócios.',
       stack: ['Sites', 'Landing pages', 'Desenvolvimento web'],
       url: 'https://mgzcreator.com.br',
+      urlLabel: 'Ver site',
       repository: '',
       image: 'https://mgzcreator.com.br/assets/og.png',
       imageAlt: 'Prévia do site da MGZ Creator',
