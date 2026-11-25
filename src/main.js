@@ -1,4 +1,4 @@
-import { profileData as data } from './data/profile.js?v=20261124-5';
+import { profileData as data } from './data/profile.js?v=20261125-1';
 
 const $ = (selector) => document.querySelector(selector);
 const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#039;', '"': '&quot;' })[char]);
@@ -18,10 +18,10 @@ function renderBrandLogos() {
     logo.src = data.person.logo;
   });
 }
-function renderExperience(item, index, current) {
+function renderExperience(item, index) {
   const fields = [item.company, item.period].filter(Boolean).map(escapeHtml).join(' · ');
-  const editable = current && (!item.company || !item.period || !item.responsibilities.length || !item.results.length);
-  return `<article class="timeline-item reveal"><div class="timeline-index">0${index + 1}</div><div class="timeline-text"><h3>${escapeHtml(item.role)}</h3><p>${escapeHtml(item.description)}</p>${editable ? '<p class="pending-note">Empresa, período, responsabilidades e resultados serão adicionados após confirmação.</p>' : ''}</div><div class="timeline-meta">${fields || 'Informações em atualização'}</div></article>`;
+  const tasks = (item.responsibilities || []).map((task) => `<li>${escapeHtml(task)}</li>`).join('');
+  return `<article class="timeline-item reveal"><div class="timeline-index">0${index + 1}</div><div class="timeline-text"><h3>${escapeHtml(item.role)}</h3><p>${escapeHtml(item.description)}</p>${tasks ? `<ul class="timeline-tasks">${tasks}</ul>` : ''}</div><div class="timeline-meta">${fields}</div></article>`;
 }
 function renderProjects() {
   $('#projects-grid').innerHTML = data.projects.map((project, index) => {
@@ -46,7 +46,7 @@ function renderContacts() {
 function populatePage() {
   setText('#hero-eyebrow', data.hero.eyebrow); setText('#person-short-name', data.person.name); setText('#person-role', data.person.role); setText('#hero-statement', data.hero.statement); setText('#hero-description', data.hero.description); setText('#person-location', data.person.location);
   setText('#about-title', data.about.title); $('#about-paragraphs').innerHTML = data.about.paragraphs.map((text) => `<p>${escapeHtml(text)}</p>`).join(''); $('#trait-list').innerHTML = data.about.traits.map((trait) => `<span>${escapeHtml(trait)}</span>`).join('');
-  setText('#experience-title', data.experience.title); $('#timeline').innerHTML = [data.experience.current, data.experience.previous].map((item, index) => renderExperience(item, index, index === 0)).join('');
+  setText('#experience-title', data.experience.title); $('#timeline').innerHTML = [data.experience.current, data.experience.previous].map((item, index) => renderExperience(item, index)).join('');
   setText('#degree-name', data.education.degree); setText('#degree-institution', data.education.institution); $('#learning-list').innerHTML = data.education.learning.map((item) => `<span>${escapeHtml(item)}</span>`).join('');
   $('#skills-grid').innerHTML = data.skills.map((group) => `<article class="skill-card reveal"><h3>${escapeHtml(group.title)}</h3><ul>${group.items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></article>`).join('');
   renderProjects(); setText('#venture-title', data.venture.title); setText('#venture-text', data.venture.text); const venture = $('#venture-link'); if (isValidUrl(data.venture.url)) venture.href = data.venture.url; else venture.classList.add('is-hidden'); $('#goal-list').innerHTML = data.goals.map((goal) => `<span>${escapeHtml(goal)}</span>`).join('');
